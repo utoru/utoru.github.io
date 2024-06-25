@@ -4,17 +4,71 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #000000;
     font-family: Arial, sans-serif;
 }
 
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.solar-system {
+    position: relative;
+    width: 600px; /* Adjust as needed */
+    height: 600px; /* Adjust as needed */
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sun a {
+    display: block;
+}
+
+.sun img {
+    display: block;
+    width: 69px;
+    height: 69px;
+    cursor: crosshair;
+}
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid lightblue;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mercury-orbit {
+    width: 200px; /* Adjust to change orbit size */
+    height: 200px; /* Adjust to change orbit size */
+}
+
+.venus-orbit {
+    width: 300px; /* Adjust to change orbit size */
+    height: 300px; /* Adjust to change orbit size */
+}
+
+.planet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 31px; /* Adjust according to Mercury image size */
+    height: 31px; /* Adjust according to Mercury image size */
+    transform: translate(-50%, -116px); /* Position on the orbit */
+}
+
+.mercury {
+    transform: translate(-50%, -116px); /* Initial position on the orbit */
+}
+
+.venus {
+    transform: translate(-50%, -166px); /* Position at 45 degrees */
+}
+
+.planet img {
+    width: 100%;
+    height: 100%;
 }
